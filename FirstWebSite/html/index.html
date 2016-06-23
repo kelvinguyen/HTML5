@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Input Type Node</title>
+    </head>
+    <body>
+        <form novalidate>
+            <label>Search:</label>
+            <input type="search" id="search" name="search" autofocus/>
+        </form>
+        <form>
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" placeholder="firstname" required/>
+            <br/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required />
+            <br/>
+            <label for="url">Url:</label>
+            <input type="url" id="url" name="url" placeholder="http://localhost/" required />
+            <br/>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx" required />
+            <br>
+            <lable for="yearInDev">Year:</lable>
+            <input type="number" id="yearInDev" name="yearInDev" min="1" max="15" step="1" />
+            <br>
+            <lable for="yearOfExperience">YearOfExperience:</lable>
+            <input type="range" id="yearOfExperience" name="yearOfExperience" min="1"  max="10" step="1" value="5" />
+            <span id="rangeValue">5</span>
+            <br>
+            <label for="TshirtColor">Tshirt Color:</label>
+            <input type="text" id="TshirtColor" name="TshirtColor" list="colors" />
+            <datalist id="colors">
+                <option value="blue"/>
+                <option value="green"/>
+                <option value="red"/>
+            </datalist>
+            <label for="backgroundColor"></label>
+            <input type="color" id="backgroundColor" name="backgroundColor" value="rgb(128,0,0)" />
+            <br>
+            <label for="arrivalDate">Arrival Date:</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" value="2016-2-2" min="2010-1-1" max="2016-9-9" />
+            <br>
+            <label for="arrivalDT">Arrival Date and Time :</label>
+            <input type="datetime" id="arrivalDT" name="arrivalDT" value="2016-11-30 11:59:00 UTC"/>
+            <br>
+            <label for="datetimelocal">DateTime Local:</label>
+            <input type="datetime-local" id="datetimelocal" name="datetimelocal" value="2015-11-30 11:59:00" />
+            <br>
+            <lable for="arrivalTime">Arrival Time:</lable>
+            <input type="time" id="arrivalTime" name="arrivalTime" value="9:30:00" />
+
+        </form>
+    </body>
+</html>
